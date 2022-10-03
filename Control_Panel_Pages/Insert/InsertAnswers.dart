@@ -1,3 +1,4 @@
+import 'package:exam_app/Control_Panel_Pages/Update/UpdateQuestions.dart';
 import 'package:exam_app/My_Providers_Pages/DeleteProvider.dart';
 import 'package:exam_app/My_Providers_Pages/Questions_Provider.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,11 @@ class AnswersTab extends StatelessWidget {
                 icon: Icon(Icons.add, color: Colors.blue),
               )),
               DataCell(IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (_) {
+                    return UpdateQuestion(Q.id, Q.question, Q.subjectName);
+                  }));
+                },
                 icon: Icon(
                   Icons.update,
                   color: Colors.green,

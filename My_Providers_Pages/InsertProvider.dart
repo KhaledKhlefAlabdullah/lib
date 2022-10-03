@@ -5,6 +5,8 @@ import 'package:flutter/cupertino.dart';
 
 // ignore: camel_case_types
 class Insert_Provider with ChangeNotifier {
+  static var question_controller = TextEditingController();
+  static var subject_controller = TextEditingController();
   var visible = true;
   void refreashVisiblity() {
     visible = !visible;

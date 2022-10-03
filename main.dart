@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'Control_Panel_Pages/ControlPanelPage.dart';
 import 'Control_Panel_Pages/Insert/InsertQuestionsAndAnswers.dart';
+import 'Control_Panel_Pages/Update/UpdateQuestions.dart';
 import 'RegistrationPages/LogInPage.dart';
 import 'RegistrationPages/SignInPage.dart';
 import 'User_Pages/HomeUserPage.dart';
